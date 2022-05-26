@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>switch funcationality</title>
+  </head>
+  <body>
+    <div class="container pt-5 mt-5">
+      <div class="row">
+          <div class="col-md-6 ">
+              <div class="card" id=card-one>
+                  <div class="card-header">JavaScript
+                  </div>
+                      <img class="card-img-top" src="https://t4.ftcdn.net/jpg/02/66/76/83/360_F_266768305_jxxjP3ivAYLHxbOejYQ4095SvaGfTjc3.jpg" width="500" height="300" alt="Card image cap">
+                  <div class="card-body">
+
+                  </div>
+                  <div class="card-footer">
+                    
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-6">
+          
+            <div class="card" id="card-two">
+                <div class="card-header">PHP
+                </div>
+                <img class="card-img-top" src="http://itsourcecode.com/wp-content/uploads/2019/01/bd2_6f5_636_330-1-original.jpg" width="500" height="300"  alt="Card image cap">
+                  <div class="card-body">
+                  </div>
+                  <div class="card-footer ans">
+                    
+                  </div>
+            </div>
+         </div>
+
+         <div col-md-12>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="switch" id="switch1"  onClike="result(javascript);" value="option1" checked>
+                          <label class="form-check-label" for="switch1">
+                            Java Script
+                          </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="switch" id="switch2"  onClike="result(javascript);" value="option1" checked>
+                          <label class="form-check-label" for="switch1">
+                            php
+                          </label>
+                      </div>
+         </div>
+
+      </div>
+    </div>
+
+    <div class="container pt-5 mt-5">
+      <div class="row">
+        <nav class=" mb-2 ">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a class="nav-link" id="showForm" href="#">fill Form</a></li>
+            <li class="nav-item"><a class="nav-link" id="showTable" href="#">table</a></li>
+          </ul>
+        </nav>
+
+
+        <div class=" mb-3 card col-md-12" id="isForm">
+          <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                    <input type="text" class="form-control""  id="name" placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+                <label for="Age">Age</label>
+                  <input type="number" class="form-control" id="Age" placeholder="Enter your age" min="106">
+            </div>
+           <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+        </div>
+        <div class="mb-3 card col-md-12" id="isTable">
+          <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">full Name</th>
+      <th scope="col">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Poll script start here  -->
+
+<script type="text/javascript">
+  $('#switch1').click(function(){
+  $('#card-one').show();
+  $('#card-two').hide();
+  });
+
+   $('#switch2').click(function(){
+  $('#card-two').show();
+  $('#card-one').hide();
+  });
+
+   $('#showForm').click(function(){
+    $('#isForm').show();
+    $('#isTable').hide();
+   });
+
+   $('#showTable').click(function(){
+    $('#isTable').show();
+    $('#isForm').hide();
+   })
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
